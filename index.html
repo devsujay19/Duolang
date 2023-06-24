@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>DuoLang - Language Translating Web-Application</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="text-input">
+          <textarea
+            spellcheck="false"
+            class="from-text"
+            placeholder="Enter text"
+          ></textarea>
+          <textarea
+            spellcheck="false"
+            readonly
+            disabled
+            class="to-text"
+            placeholder="Translated text will appear here..."
+          ></textarea>
+        </div>
+        <ul class="controls">
+          <li class="row from">
+            <div class="icons">
+              <i id="from" class="fas fa-volume-up" title="Listen"></i>
+              <i id="from" class="fas fa-copy" title="Copy to Clipboard"></i>
+            </div>
+            <select title="Select Laguage you want to translate"></select>
+          </li>
+          <li class="exchange">
+            <i
+              class="fas fa-exchange-alt"
+              title="Swap these two selected languages"
+            ></i>
+          </li>
+          <li class="row to">
+            <select title="Select Language you want to tranlate with"></select>
+            <div class="icons">
+              <i id="to" class="fas fa-volume-up" title="Listen"></i>
+              <i id="to" class="fas fa-copy" title="Copy to Clipboard"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button title="Tranlate the Text">Translate the Text</button>
+    </div>
+  </body>
+  <script src="countries-for-languages.js"></script>
+  <script src="script.js"></script>
+</html>
